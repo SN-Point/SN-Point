@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making A Website</title>
+
+    <!-- <link rel="stylesheet" href="live.css"> -->
+    <!-- <link rel="stylesheet" href="sidebar.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-grid.rtl.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-grid.rtl.css.map">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-grid.rtl.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-reboot.css.map">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-reboot.min.css.map">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-reboot.rtl.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-reboot.rtl.css.map">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-reboot.rtl.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-reboot.rtl.min.css.map">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-utilities.css.map">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-utilities.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-utilities.rtl.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-utilities.rtl.css.map">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-utilities.min.css.map">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-utilities.rtl.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-utilities.rtl.min.css.map">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.css.map">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.rtl.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.rtl.css.map">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.rtl.min.css.map">
+
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-grid.rtl.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-grid.rtl.css.map">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-grid.rtl.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-reboot.css.map">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-reboot.min.css.map">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-reboot.rtl.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-reboot.rtl.css.map">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-reboot.rtl.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-reboot.rtl.min.css.map">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-utilities.css.map">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-utilities.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-utilities.rtl.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-utilities.rtl.css.map">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-utilities.min.css.map">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-utilities.rtl.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap-utilities.rtl.min.css.map">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.css.map">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.rtl.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.rtl.css.map">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.rtl.min.css.map">
+    <!-- <link rel="stylesheet" href="sidebar_index.css"> -->
+    <link rel="stylesheet" href="w3school.css">
+    <link rel="stylesheet" href="w3-theme-black.css">
+    <style>
+        body {
+            background-image: url(bg.JPG);
+            /* width: 100%; */
+            background-size: cover;
+            background-attachment: fixed;
+            /* background-position-x: right;     */
+            /* background-position-y: 70px; */
+            background-repeat: no-repeat;
+        }
+
+        .color {
+            color: white;
+        }
+    </style>
+    <link rel="stylesheet" href="tabless.css">
+</head>
+
+<body>
+
+    <div>
+        <div class="zindex">
+            <ul class="w3-navbar w3-card-2 w3-transparent w3-xlarge color">
+
+                <li><a href="index.html" class="w3-hover-green">Home</a></li>
+                <li class="w3-dropdown-hover">
+                    <a href="javascript:void(0)" class="w3-hover-green">Notes <i class="fa fa-caret-down"></i></a>
+                    <div class="w3-dropdown-content w3-pale-green  w3-card-4">
+                        <a href="matric.html" class="w3-pale-green w3-hover-green ">Matric</a>
+                        <a href="inter.html" class="w3-pale-green w3-hover-green">Inter</a>
+                        <a href="bsc.html" class="w3-pale-green w3-hover-green">BA/Bsc</a>
+                        <a href="msc.html" class="w3-pale-green w3-hover-green">MA/MSc</a>
+                        <a href="bs.html" class="w3-pale-green w3-hover-green">BS</a>
+                    </div>
+                </li>
+                <li><a href="about.html" class="w3-hover-green">Contact Us</a></li>
+
+                <li class="w3-hover-transparent w3-right ">
+                    <a href="index.html" class="w3-hover-green w3-animate-zoom">SN Point</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <h1 class="w3-text-green">BS</h1>
+    <div class="firstsmester">
+        <h1 style="text-align:center" class="color">FirstSemester</h1>
+        <h1 class="w3-text-green">Physics</h1>
+        <table class="w3-table color">
+            <tr>
+                <th>Chapter SNo.</th>
+                <th>Chapters</th>
+                <th>download</th>
+            </tr>
+            <!-- <hr class="color"> -->
+            <tr>
+                <td>1</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy1.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy2.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy3.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy4.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy5.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy6.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+        </table>
+        <h1 class="w3-text-green">Chemistry</h1>
+        <table class="w3-table color">
+            <tr>
+                <th>Chapter SNo.</th>
+                <th>Chapters</th>
+                <th>download</th>
+            </tr>
+            <!-- <hr class="color"> -->
+            <tr>
+                <td>1</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy1.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy2.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy3.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy4.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy5.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy6.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+        </table>
+        <h1 class="w3-text-green">Maths</h1>
+        <table class="w3-table color">
+            <tr>
+                <th>Chapter SNo.</th>
+                <th>Chapters</th>
+                <th>download</th>
+            </tr>
+            <!-- <hr class="color"> -->
+            <tr>
+                <td>1</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy1.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy2.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy3.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy4.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy5.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy6.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+        </table>
+        <h1 class="w3-text-green">Computer</h1>
+        <table class="w3-table color">
+            <tr>
+                <th>Chapter SNo.</th>
+                <th>Chapters</th>
+                <th>download</th>
+            </tr>
+            <!-- <hr class="color"> -->
+            <tr>
+                <td>1</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy1.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy2.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy3.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy4.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy5.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy6.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+        </table>
+        <h1 class="w3-text-green">Biology</h1>
+        <table class="w3-table color">
+            <tr>
+                <th>Chapter SNo.</th>
+                <th>Chapters</th>
+                <th>download</th>
+            </tr>
+            <!-- <hr class="color"> -->
+            <tr>
+                <td>1</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy1.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy2.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy3.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy4.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy5.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy6.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+        </table>
+        <h1 class="w3-text-green">Urdu</h1>
+        <table class="w3-table color">
+            <tr>
+                <th>Chapter SNo.</th>
+                <th>Chapters</th>
+                <th>download</th>
+            </tr>
+            <!-- <hr class="color"> -->
+            <tr>
+                <td>1</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy1.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy2.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy3.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy4.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy5.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy6.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+        </table>
+        <h1 class="w3-text-green">English</h1>
+        <table class="w3-table color">
+            <tr>
+                <th>Chapter SNo.</th>
+                <th>Chapters</th>
+                <th>download</th>
+            </tr>
+            <!-- <hr class="color"> -->
+            <tr>
+                <td>1</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy1.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy2.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy3.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy4.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy5.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy6.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+        </table>
+        <h1 class="w3-text-green">Islmayat</h1>
+        <table class="w3-table color">
+            <tr>
+                <th>Chapter SNo.</th>
+                <th>Chapters</th>
+                <th>download</th>
+            </tr>
+            <!-- <hr class="color"> -->
+            <tr>
+                <td>1</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy1.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy2.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy3.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy4.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy5.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy6.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+        </table>
+        <h1 class="w3-text-green">PK-Studies</h1>
+        <table class="w3-table color">
+            <tr>
+                <th>Chapter SNo.</th>
+                <th>Chapters</th>
+                <th>download</th>
+            </tr>
+            <!-- <hr class="color"> -->
+            <tr>
+                <td>1</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy1.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy2.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy3.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy4.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy5.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy6.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="seconsmester">
+        <h1 style="text-align:center" class="color">Seconsmester</h1>
+        <h1 class="w3-text-green">Physics</h1>
+        <table class="w3-table color">
+            <tr>
+                <th>Chapter SNo.</th>
+                <th>Chapters</th>
+                <th>download</th>
+            </tr>
+            <!-- <hr class="color"> -->
+            <tr>
+                <td>1</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy1.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy2.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy3.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy4.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy5.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy6.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+        </table>
+        <h1 class="w3-text-green">Chemistry</h1>
+        <table class="w3-table color">
+            <tr>
+                <th>Chapter SNo.</th>
+                <th>Chapters</th>
+                <th>download</th>
+            </tr>
+            <!-- <hr class="color"> -->
+            <tr>
+                <td>1</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy1.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy2.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy3.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy4.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy5.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy6.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+        </table>
+        <h1 class="w3-text-green">Maths</h1>
+        <table class="w3-table color">
+            <tr>
+                <th>Chapter SNo.</th>
+                <th>Chapters</th>
+                <th>download</th>
+            </tr>
+            <!-- <hr class="color"> -->
+            <tr>
+                <td>1</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy1.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy2.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy3.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy4.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy5.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy6.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+        </table>
+        <h1 class="w3-text-green">Computer</h1>
+        <table class="w3-table color">
+            <tr>
+                <th>Chapter SNo.</th>
+                <th>Chapters</th>
+                <th>download</th>
+            </tr>
+            <!-- <hr class="color"> -->
+            <tr>
+                <td>1</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy1.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy2.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy3.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy4.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy5.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy6.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+        </table>
+        <h1 class="w3-text-green">Biology</h1>
+        <table class="w3-table color">
+            <tr>
+                <th>Chapter SNo.</th>
+                <th>Chapters</th>
+                <th>download</th>
+            </tr>
+            <!-- <hr class="color"> -->
+            <tr>
+                <td>1</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy1.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy2.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy3.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy4.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy5.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy6.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+        </table>
+        <h1 class="w3-text-green">Urdu</h1>
+        <table class="w3-table color">
+            <tr>
+                <th>Chapter SNo.</th>
+                <th>Chapters</th>
+                <th>download</th>
+            </tr>
+            <!-- <hr class="color"> -->
+            <tr>
+                <td>1</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy1.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy2.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy3.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy4.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy5.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy6.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+        </table>
+        <h1 class="w3-text-green">English</h1>
+        <table class="w3-table color">
+            <tr>
+                <th>Chapter SNo.</th>
+                <th>Chapters</th>
+                <th>download</th>
+            </tr>
+            <!-- <hr class="color"> -->
+            <tr>
+                <td>1</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy1.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy2.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy3.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy4.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy5.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy6.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+        </table>
+        <h1 class="w3-text-green">Islmayat</h1>
+        <table class="w3-table color">
+            <tr>
+                <th>Chapter SNo.</th>
+                <th>Chapters</th>
+                <th>download</th>
+            </tr>
+            <!-- <hr class="color"> -->
+            <tr>
+                <td>1</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy1.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy2.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy3.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy4.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy5.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy6.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+        </table>
+        <h1 class="w3-text-green">PK-Studies</h1>
+        <table class="w3-table color">
+            <tr>
+                <th>Chapter SNo.</th>
+                <th>Chapters</th>
+                <th>download</th>
+            </tr>
+            <!-- <hr class="color"> -->
+            <tr>
+                <td>1</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy1.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy2.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy3.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy4.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy5.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Matrix and Diameter</td>
+                <td> <a href="phy6.pdf"> <button class="w3-btn w3-green">Download</button></a></td>
+            </tr>
+        </table>
+    </div>
+    <!-- </div> -->
+</body>
+
+</html>
