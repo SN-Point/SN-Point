@@ -70,14 +70,33 @@
     <link rel="stylesheet" href="w3school.css">
     <link rel="stylesheet" href="w3-theme-black.css">
     <style>
+   * {
+            box-sizing: border-box;
+        }
+
         body {
-            background-image: url(https://sn-point.github.io/SN-Point/picturesbackground.jpg);
-            /* width: 100%; */
-            background-size: cover;
-            background-attachment: fixed;
-            /* background-position-x: right;     */
-            /* background-position-y: 70px; */
-            background-repeat: no-repeat;
+            margin: 0;
+            font-family: Arial;
+            font-size: 17px;
+        }
+
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        .content {
+            top: 0;
+            position: absolute;
+            /* bottom: 0; */
+            /* background: rgba(0, 0, 0, 0.5); */
+            /* color: #f1f1f1; */
+            width: 100%;
+            padding: 20px;
+            /* overflow: scroll; */
         }
 
         .color {
@@ -96,7 +115,13 @@
 </head>
 
 <body>
-
+<video autoplay muted loop id="myVideo">
+        <source
+            src="No Copyright Video, Copyright Free,  Motion Graphics, Background, Animation, Green Screen, YouTube (1).mp4"
+            type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <div class="content">
     <div>
         <div class="zindex">
             <ul class="w3-navbar w3-card-2 w3-transparent w3-xlarge color">
@@ -286,7 +311,7 @@
         <p>Contact information: <a href="mailto:haseebali11226@gmail.com">
                 haseebali11226@gmail.com</a>.</p>
     </footer>
-
+    </div>
 </body>
 <script>
 
